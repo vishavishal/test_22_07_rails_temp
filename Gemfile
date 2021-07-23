@@ -15,16 +15,21 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console',          '>= 4.1.0'
-  gem 'listen',               '3.1.5'
-  gem 'spring',               '2.1.0'
-  gem 'rack-mini-profiler',   '~> 2.0'
+  gem 'web-console',            '>= 4.1.0'
+  gem 'listen',                 '3.1.5'
+  gem 'spring',                 '2.1.0'
+  gem 'spring-watcher-listen',  '2.0.1'
+  gem 'rack-mini-profiler',     '~> 2.0'
 end
 
 group :test do
-  gem 'capybara',             '>= 3.26'
+  gem 'capybara',               '>= 3.26'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+end
+
+group :production do
+  gem 'pg',                     '1.2.3'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
